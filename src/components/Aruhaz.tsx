@@ -1,15 +1,12 @@
 import { BookList } from "../books";
+import { Konyv }from './Konyv'
 
 function Aruhaz() {
   return(
   <main>
     <div>
         {BookList.map((book)=> (
-            <div key={book.id}>
-                <h3>{book.title}</h3>
-                <p>{book.author}</p>
-                <p>{book.price}</p>
-            </div>
+            <Konyv book={book} key={book.id}/>
         )
         )}
     </div>
