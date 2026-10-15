@@ -1,14 +1,10 @@
-import { BookList } from "../books";
-import { Konyv }from './Konyv'
+import Konyvek from './Konyvek'
 
 function Aruhaz() {
   return(
   <main>
     <div>
-        {BookList.map((book)=> (
-            <Konyv book={book} key={book.id}/>
-        )
-        )}
+        <Konyvek />
     </div>
   </main>
   ) 
